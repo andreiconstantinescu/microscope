@@ -1,6 +1,6 @@
 Template.postSubmit.events({
   'submit form': function(e) {
-    e.prevendDefault();
+    e.preventDefault();
 
     var post = {
       url: $(e.target).find('[name=url]').val(),
@@ -12,9 +12,9 @@ Template.postSubmit.events({
         return alert(error.reason);
       }
 
-      if(result.postExists)
+      if (result.postExists)
         alert('This link has already been posted.');
-      Router.go('postPage', post);
+      Router.go('postPage', {_id: result._id});
     });
   }
 });
