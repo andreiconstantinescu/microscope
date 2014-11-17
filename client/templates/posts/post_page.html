@@ -1,8 +1,15 @@
 <template name="postPage">
- {{> postItem}}
- <ul class='comments'>
+  {{> postItem}}
+  <ul class='comments'>
    {{#each comments}}
      {{> commentItem}}
    {{/each}}
- </ul>
+  </ul>
+  {{#if currentUser}}
+    {{> commentSubmit}}
+  {{else}}
+    <p>
+      To comment you have to log in.
+    </p>
+  {{/if}}
 </template>
