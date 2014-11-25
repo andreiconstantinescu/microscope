@@ -6,4 +6,8 @@ This app was developed while reading the [Discover Meteor](https://www.discoverm
 * Upvote posts.
 * Comment posts.
 
+The book is a great for learning Meteor principles and  how to create a realtime application and deploy it to meteor servers. It is deployed [here](http://another-microscope-app.meteor.com/).
+
+
+
 MIT license.
